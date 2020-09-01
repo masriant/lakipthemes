@@ -1,0 +1,512 @@
+/*
+Theme Name: Lakip Themes 2020
+Text Domain: lakipcenter
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: WordPress theme built with bootstrap-5.0.0-alpha1. Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: bootstrap, blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready.
+Author: Masrianto
+Author URI: https://masrianto.com
+Theme URI: https://lakipcenter.com/themes/lakipthemes2020
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+@import url('bootstrap-5.0.0-alpha1/css/bootstrap.min.css');
+/*
+ * Globals
+ */
+
+
+body {
+  /* Margin bottom by footer height */
+  /* margin-bottom: 60px; */
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  /* color: #555; */
+  background-color: #ecf0f5;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+
+/*---Comments---*/
+.comments {
+  border-top: 1px #ccc solid;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.comments li {
+  list-style: none;
+}
+
+.comments h3,
+.comments h2 {
+  color: #930;
+  padding: 5px;
+}
+
+.comment-body {
+  border: 1px #ccc dashed;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
+
+.comment-meta {
+  color: #666;
+  padding: 10px;
+}
+
+.comment-meta a {
+  color: #666;
+}
+
+.comment-meta img {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.comment-reply-link {
+  background: #930;
+  color: #fff;
+  padding: 3px;
+  border: #ccc 1px solid;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.comment-reply-link a:hover {
+  background: #fff;
+  color: #930;
+}
+
+#respond {
+
+  padding: 10px;
+  background: #f5f5f5;
+  border: 1px solid #CCC;
+}
+
+#respond input[type=text],
+textarea {
+  width: 100%;
+  background: #fff;
+  color: #930;
+  border: 1px solid #930;
+  padding: 5px;
+  height: auto;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#respond input[type=text]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#author {
+  font-size: 16px;
+  color: #1d1d1d;
+
+}
+
+#url {
+  color: #21759b;
+
+}
+
+#submit {
+  background: #930;
+  color: #fff;
+  border: 1px solid #693;
+  padding: 5px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#submit:hover {
+  background: #093;
+  color: #fff;
+  border: 1px solid #930;
+}
+
+/* SITEMAP */
+/*-----------------------------------------------------------------------------
+								   Global Set
+-----------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------------------
+                				#carousel-slider 
+---------------------------------------------------------------------------- */
+/**Bootstrap Carousel FADE**/
+/* .carousel {
+  margin-top: -5px;
+}
+
+.carousel-inner>.item>a>img {
+  max-width: 100%;
+  width: 100%;
+  height: 35vw;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  z-index: 10;
+  padding-top: 0;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.carousel-caption h3 {
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  letter-spacing: -1px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 6px !important;
+  text-align: left;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-caption p {
+  margin-top: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.carousel-control {
+  width: */
+/*15%*/
+/* 8%
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  display: none;
+}
+
+.carousel:hover .carousel-control.left,
+.carousel:hover .carousel-control.right {
+  display: block;
+}
+
+.carousel-indicators {
+  bottom: 2px
+}
+
+.carousel-indicators .active {
+  background: #FDF7DE
+} */
+
+/**arrows**/
+/* .carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+} */
+
+/*WHAT'S NEW IN BS 3.3: Added transforms to improve carousel performance in modern browsers. 
+Now override the 3.3 new styles for modern browsers & apply opacity*/
+/* @media all and (transform-3d),
+(-webkit-transform-3d) {
+
+  .carousel-fade .carousel-inner>.item.next,
+  .carousel-fade .carousel-inner>.item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-fade .carousel-inner>.item.prev,
+  .carousel-fade .carousel-inner>.item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-fade .carousel-inner>.item.next.left,
+  .carousel-fade .carousel-inner>.item.prev.right,
+  .carousel-fade .carousel-inner>.item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+} */
+
+/*-----------------------------------------------------------------------------
+							Body - Single Page
+-----------------------------------------------------------------------------*/
+.single-postmeta {
+  height: 23px;
+  position: relative;
+  background-color: transparent;
+  border-bottom: 3px solid #333;
+  margin-top: -7px;
+  margin-bottom: 20px;
+}
+
+.single-postmeta>span {
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 23px;
+  padding: 2px 10px;
+}
+
+.single-postmeta>span:before {
+  content: "";
+  position: absolute;
+  border-bottom: 23px solid #333;
+  border-left: 23px solid transparent;
+  right: 100%;
+  top: 0;
+}
+
+article.content-body p {
+  text-align: justify;
+}
+
+article.content-body img {
+  border: 1px solid #989898;
+  padding: 2px;
+}
+
+.single-metatags {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.single-metatags:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.single-metatags>.tg,
+.single-metatags>.tg:hover {
+  cursor: default;
+  border: none;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.single-metatags>a {
+  margin: 0 2px 2px 0;
+  padding: 0 5px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  display: block;
+  float: left;
+  color: #333;
+}
+
+.single-metatags>a:hover,
+.single-metatags>a:focus {
+  background-color: #eee;
+}
+
+ul.single-related {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.single-related li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-related img {
+  border: 1px solid #ddd;
+  max-width: 100%;
+  width: 150px;
+  height: 105px;
+}
+
+.single-related li:hover .moving-box {
+  bottom: 0;
+}
+
+.single-related li .moving-box a {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.single-author {
+  border-top: 3px solid #333;
+  position: relative;
+  padding: 20px 0 10px 0;
+}
+
+.single-author:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.single-author>span {
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  height: 23px;
+  padding: 0 10px;
+}
+
+.single-author>span:after {
+  content: "";
+  position: absolute;
+  border-top: 23px solid #333;
+  border-right: 23px solid transparent;
+  left: 100%;
+  top: 0;
+}
+
+.single-author img {
+  float: right;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.count-user-posts {
+  position: relative;
+  border-bottom: 3px solid #333;
+  height: 23px;
+  margin-bottom: 10px;
+}
+
+.count-user-posts>span {
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 23px;
+  padding: 0 10px;
+}
+
+.count-user-posts>span:before {
+  content: "";
+  position: absolute;
+  border-bottom: 23px solid #333;
+  border-left: 23px solid transparent;
+  right: 100%;
+  top: 0;
+}
+
+.pager li>a {
+  border-radius: 5px;
+}
+
+.pager .previous>a:before {
+  content: "\f053";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+}
+
+.pager .next>a:after {
+  content: "\f054";
+  font-family: "FontAwesome";
+  margin-left: 10px;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  width: 88%;
+  margin-left: 5%;
+  font-style: italic;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 40px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+
+/* -----------------------------------------------------------------------------
+							   FOOTER
+----------------------------------------------------------------------------- */
+.footer {
+  position: absolute;
+  /* bottom: auto; */
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  /* Vertically center the text there */
+  background-color: #353434;
+
+}
+
+.footer>.container {
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.footer>.container a,
+.footer>.container a:hover {
+  color: #fff;
+
+}
